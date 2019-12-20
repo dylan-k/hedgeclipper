@@ -1,6 +1,7 @@
 ---
 extends: existence
-message: "'%s' might distract from the point."
+message: "'%s' might hedge the point."
+link: https://typely.com/blog/hedging/#targetText=What%20is%20hedging%20language%3F,a%20particular%20action%20or%20decision.
 ignorecase: true
 level: warning
 tokens:
@@ -219,3 +220,6 @@ tokens:
   - virtually
   - will
   - would
+  - I would argue that
+  - ', so to speak'
+  - to a certain degree
