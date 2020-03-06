@@ -1,7 +1,7 @@
 ---
 extends: existence
-message: "'%s' might hedge the point."
-link: https://typely.com/blog/hedging/#targetText=What%20is%20hedging%20language%3F,a%20particular%20action%20or%20decision.
+message: "'%s' hedges the point."
+link: https://typely.com/blog/hedging/
 ignorecase: true
 level: warning
 tokens:
@@ -17,6 +17,7 @@ tokens:
   - I should
   - I think
   - I will try
+  - I would argue that
   - I'll try
   - I'm about
   - I'm just being honest here
@@ -88,6 +89,8 @@ tokens:
   - don't know
   - doubt
   - doubtful
+  - doubtfully
+  - dumbly
   - effectively
   - estimate
   - estimated
@@ -100,6 +103,7 @@ tokens:
   - finds
   - forgive
   - found
+  - frankly
   - frequently
   - from my point of view
   - generally
@@ -112,7 +116,6 @@ tokens:
   - if i'm understanding you correctly
   - improbable
   - in all honesty
-  - frankly
   - in general
   - in my mind
   - in my opinion
@@ -147,6 +150,7 @@ tokens:
   - necessarily
   - occasionally
   - often
+  - ought
   - overall
   - partially
   - partly
@@ -178,6 +182,7 @@ tokens:
   - several
   - should
   - so far
+  - so to speak
   - some
   - somebody
   - somehow
@@ -206,6 +211,7 @@ tokens:
   - think
   - thinks
   - thought
+  - to a certain degree
   - to be honest
   - to be perfectly honest
   - to my knowledge
@@ -221,6 +227,3 @@ tokens:
   - virtually
   - will
   - would
-  - I would argue that
-  - ', so to speak'
-  - to a certain degree
