@@ -6,33 +6,6 @@ ignorecase: true
 level: warning
 tokens:
   - "!!!"
-  - Honestly
-  - I am about
-  - I believe
-  - I doubt
-  - I feel
-  - I guess
-  - I may be wrong
-  - I might be wrong
-  - I should
-  - I think
-  - I will try
-  - I would argue that
-  - I'll try
-  - I'm about
-  - I'm just being honest here
-  - I'm just saying
-  - I'm just trying
-  - I'm no expert
-  - I'm not an expert
-  - I'm not sure
-  - I'm trying
-  - If I'm being honest
-  - In my opinion
-  - This might be a stupid question
-  - We think
-  - We're no expert
-  - Yes, but
   - a bit
   - a little
   - a tad
@@ -98,6 +71,7 @@ tokens:
   - et cetera
   - evidently
   - fairly
+  - fault
   - few
   - find
   - finds
@@ -111,7 +85,29 @@ tokens:
   - guessed
   - guesses
   - hardly
+  - Honestly
   - hopefully
+  - I am about
+  - I believe
+  - I doubt
+  - I feel
+  - I guess
+  - I may be wrong
+  - I might be wrong
+  - I should
+  - I think
+  - I will try
+  - I would argue that
+  - I'll try
+  - I'm about
+  - I'm just being honest here
+  - I'm just saying
+  - I'm just trying
+  - I'm no expert
+  - I'm not an expert
+  - I'm not sure
+  - I'm trying
+  - If I'm being honest
   - if I'm honest
   - if i'm understanding you correctly
   - improbable
@@ -119,6 +115,7 @@ tokens:
   - in general
   - in my mind
   - in my opinion
+  - In my opinion
   - in my understanding
   - in my view
   - inconclusive
@@ -143,6 +140,7 @@ tokens:
   - mostly
   - much
   - must
+  - my bad
   - my impression
   - my thinking is
   - my understanding is
@@ -172,6 +170,7 @@ tokens:
   - rather
   - really
   - really quite
+  - regret
   - roughly
   - says
   - seem
@@ -210,6 +209,7 @@ tokens:
   - their impression
   - think
   - thinks
+  - This might be a stupid question
   - thought
   - to a certain degree
   - to be honest
@@ -225,5 +225,8 @@ tokens:
   - usually
   - very
   - virtually
+  - We think
+  - We're no expert
   - will
   - would
+  - yes, but
