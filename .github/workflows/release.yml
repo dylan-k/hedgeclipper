@@ -1,0 +1,38 @@
+# Vale resolves a package's directory name from the last path segment of its
+# URL, then expects a directory by that name inside the archive. GitHub's
+# generated source archive wraps everything in `hedgeclipper-<version>/`, which
+# never matches — so `vale sync` fails unless we attach a purpose-built asset.
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # The style files live at the repo root so the repo can be cloned
+      # straight into a StylesPath. The archive needs them one level down,
+      # in a directory named exactly as `BasedOnStyles` refers to the style.
+      - name: Build HedgeClipper.zip
+        run: |
+          mkdir -p dist/HedgeClipper
+          cp Hedges.yml meta.json README.md dist/HedgeClipper/
+          cd dist && zip -r ../HedgeClipper.zip HedgeClipper
+
+      - name: Verify archive layout
+        run: |
+          unzip -l HedgeClipper.zip
+          unzip -l HedgeClipper.zip | grep -q 'HedgeClipper/Hedges.yml'
+
+      - name: Attach to release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: HedgeClipper.zip
