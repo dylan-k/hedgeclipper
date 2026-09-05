@@ -181,7 +181,9 @@ tokens:
   - quite clearly
   - rare
   - rarely
-  - rather
+  # "rather than" is comparative, not hedging: it names a choice between two
+  # things. Only the intensifier sense ("rather large", "would rather") hedges.
+  - rather(?! than)
   - really
   - really quite
   - regret
