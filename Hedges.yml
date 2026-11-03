@@ -46,7 +46,11 @@ tokens:
   - believes
   - bother
   - bunch
-  - can
+  # "can" alone states ability, so it is allowed. Only phrases where "can" softens a claim hedge.
+  - can (?:arguably|at times|generally|maybe|occasionally|often|perhaps|possibly|potentially|sometimes|typically|usually)
+  - can (?:appear|seem)
+  - can be (?:considered|described as|said to be|seen as|thought of as|viewed as)
+  - 'can help(?: to)?'
   - certain
   - certainly
   - clear
